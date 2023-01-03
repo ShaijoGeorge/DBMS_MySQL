@@ -101,4 +101,21 @@ mysql> select * from CSEB;
 +---------+-----------+------+
 3 rows in set (0.00 sec)
 
-mysql>
+mysql> truncate table cseb;
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> select * from cseb;
+Empty set (0.00 sec)
+
+mysql> drop table cseb;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> select * from cseb;
+ERROR 1146 (42S02): Table 'student.cseb' doesn't exist
+mysql> show tables;
++-------------------+
+| Tables_in_student |
++-------------------+
+| employe_list      |
++-------------------+
+1 row in set (0.00 sec)
